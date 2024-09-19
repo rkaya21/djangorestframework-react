@@ -48,7 +48,7 @@ const Posts = (props) => {
                     const response = await axios.get('https://api.unsplash.com/photos/random', {
                         params: {
                             client_id: accessKey,
-                            query: 'nature', 
+                            query: 'technology, travel', 
                             count: 1, 
                         },
                     });
