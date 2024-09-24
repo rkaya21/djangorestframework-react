@@ -76,6 +76,6 @@ Son blog yazılarını gösterir.
 
 ## Görseller
 
-<img src="./images/1.png" alt="Post Öncesi" width="300"/>
-<img src="./images/2.png" alt="Frontend" width="300"/>
-<img src="./images/3.png" alt="Backend" width="300"/>
+<img src="./images/1.png" alt="Post Öncesi" width="600"/>
+<img src="./images/2.png" alt="Frontend" width="600"/>
+<img src="./images/3.png" alt="Backend" width="600"/>
