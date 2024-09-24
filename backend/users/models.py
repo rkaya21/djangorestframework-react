@@ -51,6 +51,17 @@ class NewUser(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=False)
 
+    groups = models.ManyToManyField(
+        'auth.Group',
+        related_name='newuser_set',
+        blank = True
+    )
+    user_permissions = models.ManyToManyField(
+        'auth.Permission',
+        related_name='newuser_permissions_set',
+        blank=True
+    )
+
     objects = CustomAccountManager()
 
     USERNAME_FIELD = 'email'
