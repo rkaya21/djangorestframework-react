@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import Posts from './components/Posts';
-import PostLoadingComponent from './components/PostLoading';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-
-const theme = createTheme();
-
+import Posts from './components/posts';
+import PostLoadingComponent from './components/postLoading';
 function App() {
 	const PostLoading = PostLoadingComponent(Posts);
 	const [appState, setAppState] = useState({
