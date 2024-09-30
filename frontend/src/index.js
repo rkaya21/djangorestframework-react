@@ -7,7 +7,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-
+import Register from './components/register';
 
 const theme = createTheme({
   // Tema ayarları gelecek
@@ -22,6 +22,7 @@ const routing = (
         <Header />
         <Routes>
           <Route path="/" element={<App />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
         <Footer />
       </React.StrictMode>
