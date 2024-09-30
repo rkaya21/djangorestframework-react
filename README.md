@@ -19,10 +19,13 @@ Blog yazılarının başlık, yazar, özet, içerik ve durum bilgilerini içerir
 Son blog yazılarını gösterir.
 
 ### Bileşenler
-- **Posts:** Blog yazılarını listeler.
-- **PostLoading:** Veri yüklenmeden önce gösterilen yükleniyor yazar.
-- **Header:** Üst kısımda başlık içerir.
-- **Footer:** Alt kısımda bilgiler içerir.
+- **posts:** Blog yazılarını listeler.
+- **postLoading:** Veri yüklenmeden önce gösterilen yükleniyor yazar.
+- **header:** Üst kısımda başlık içerir.
+- **footer:** Alt kısımda bilgiler içerir.
+- **register:** Kayıt işlemi yapar.
+- **login:** Giriş işlemi yapar.
+- **logout:** Çıkış işlemi yapar.
 
 ## Kurulum ve Kullanım
 
