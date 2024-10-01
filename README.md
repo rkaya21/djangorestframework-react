@@ -78,7 +78,8 @@ Son blog yazılarını gösterir.
     - Web uygulamamız [http://localhost:3000](http://localhost:3000) adresinde çalışacaktır.
 
 ## Görseller
-
-<img src="./images/1.png" alt="Post Öncesi" width="600"/>
-<img src="./images/2.png" alt="Frontend" width="600"/>
-<img src="./images/3.png" alt="Backend" width="600"/>
+<img src="./images/4.png" alt="Kayıt Ol" width="800"/>
+<img src="./images/5.png" alt="Giriş Yap" width="800"/>
+<img src="./images/1.png" alt="Post Öncesi" width="800"/>
+<img src="./images/2.png" alt="Frontend" width="800"/>
+<img src="./images/3.png" alt="Backend" width="800"/>
