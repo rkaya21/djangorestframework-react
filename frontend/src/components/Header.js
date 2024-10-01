@@ -41,7 +41,7 @@ function Header() {
               color="textPrimary"
               sx={{ margin: theme.spacing(1, 1.5) }}
             >
-              Register
+              Kayıt Ol
             </Link>
           </nav>
           <Button
