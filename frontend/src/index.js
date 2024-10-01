@@ -8,6 +8,8 @@ import Footer from './components/footer';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Register from './components/register';
+import Login from './components/login';
+import Logout from './components/logout';
 
 const theme = createTheme({
   // Tema ayarları gelecek
@@ -23,6 +25,8 @@ const routing = (
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/logout" element={<Logout />} />
         </Routes>
         <Footer />
       </React.StrictMode>
