@@ -14,9 +14,12 @@ class CustomUserCreate(APIView):
         if reg_serializer.is_valid():
             newuser = reg_serializer.save()
             if newuser:
-                return Response(status=status.HTTP_201_CREATED)
+                return Response({
+                    "message": "Kullanıcı başarıyla oluşturuldu.",
+                    "user": reg_serializer.data  
+                }, status=status.HTTP_201_CREATED)
         return Response(reg_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
 
 class BlacklistTokenView(APIView):
     permission_classes = [AllowAny]
@@ -26,5 +29,17 @@ class BlacklistTokenView(APIView):
             refresh_token = request.data['refresh_token']
             token = RefreshToken(refresh_token)
             token.blacklist()
+
+            return Response({
+                "message": "Token başarıyla blackliste alındı."
+            }, status=status.HTTP_200_OK)
+        
+        except KeyError:
+            return Response({
+                "error": "Refresh token is required"
+            }, status=status.HTTP_400_BAD_REQUEST)
+
         except Exception as e:
-            return Response(status=status.HTTP_400_BAD_REQUEST)
+            return Response({
+                "error": str(e)
+            }, status=status.HTTP_400_BAD_REQUEST)
