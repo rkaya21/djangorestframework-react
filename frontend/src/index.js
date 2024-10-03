@@ -10,10 +10,10 @@ import * as serviceWorker from './serviceWorker';
 import Register from './components/register';
 import Login from './components/login';
 import Logout from './components/logout';
+import SinglePage from './components/singlePage';
 
-const theme = createTheme({
-  // Tema ayarları gelecek
-});
+
+const theme = createTheme({});
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -27,6 +27,7 @@ const routing = (
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/post/:slug" element={<SinglePage />} />
         </Routes>
         <Footer />
       </React.StrictMode>
